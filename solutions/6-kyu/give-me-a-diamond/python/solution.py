@@ -1,0 +1,2 @@
+def diamond(n):
+    return None if n % 2 == 0 or n <= 0 else ''.join([' ' * i + '*' * j + '\n' for i, j in enumerate(range(n, -1, -2))][::-1] + [' ' * i + '*' * j + '\n' for i, j in enumerate(range(n-2, -1, -2), 1)])
